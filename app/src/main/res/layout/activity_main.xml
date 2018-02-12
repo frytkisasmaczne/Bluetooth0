@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.frytki.bluetooth0.MainActivity"
+    tools:ignore="HardcodedText"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/wyslij0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="wyslij0"
+        app:layout_constraintEnd_toStartOf="@+id/wyslij1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="owyslij0" />
+
+    <Button
+        android:id="@+id/wyslij1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="wyslij1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="owyslij1" />
+
+    <Button
+        android:id="@+id/rozlacz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="rozlacz"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="rozlacz" />
+
+    <Button
+        android:id="@+id/wyslij2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="272dp"
+        android:text="wyslij2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="owyslij2" />
+
+    <Button
+        android:id="@+id/wyslij3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wyslij3"
+        app:layout_constraintEnd_toStartOf="@+id/wyslij2"
+        app:layout_constraintTop_toBottomOf="@+id/wyslij2"
+        android:onClick="owyslij3" />
+
+    <Button
+        android:id="@+id/wyslij4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wyslij4"
+        app:layout_constraintStart_toEndOf="@+id/wyslij2"
+        app:layout_constraintTop_toBottomOf="@+id/wyslij2"
+        android:onClick="owyslij4" />
+
+    <Button
+        android:id="@+id/wyslij6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wyslij6"
+        app:layout_constraintStart_toStartOf="@+id/wyslij2"
+        app:layout_constraintTop_toBottomOf="@+id/wyslij2"
+        android:onClick="owyslij6"/>
+
+    <Button
+        android:id="@+id/wyslij5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="wyslij5"
+        app:layout_constraintStart_toStartOf="@+id/wyslij2"
+        app:layout_constraintTop_toBottomOf="@+id/wyslij2"
+        android:onClick="owyslij5" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:indeterminate="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="136dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
