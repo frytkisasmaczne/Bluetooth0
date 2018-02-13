@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="org.frytki.bluetooth0.Sterowanie">
+    tools:context="org.frytki.bluetooth0.Sterowanie"
+    tools:ignore="HardcodedText">
 
     <Button
         android:id="@+id/disconnect"
@@ -12,14 +13,6 @@
         android:layout_height="wrap_content"
         android:text="rozłącz"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/send1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="1"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -31,6 +24,14 @@
         app:layout_constraintTop_toTopOf="@+id/send1" />
 
     <Button
+        android:id="@+id/send1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
         android:id="@+id/send2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -39,14 +40,6 @@
         android:text="2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/send6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="6"
-        app:layout_constraintStart_toStartOf="@+id/send2"
-        app:layout_constraintTop_toBottomOf="@+id/send2" />
 
     <Button
         android:id="@+id/send3"
@@ -72,4 +65,35 @@
         android:text="5"
         app:layout_constraintStart_toStartOf="@+id/send2"
         app:layout_constraintTop_toBottomOf="@+id/send2" />
+
+    <Button
+        android:id="@+id/send6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6"
+        app:layout_constraintStart_toStartOf="@+id/send2"
+        app:layout_constraintTop_toBottomOf="@+id/send2" />
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="108dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="190dp"
+        android:layout_height="174dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="160dp"
+        android:text="TextView"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </android.support.constraint.ConstraintLayout>

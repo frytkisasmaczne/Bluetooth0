@@ -65,10 +65,9 @@ class Lista : Activity() {
         var info = (v as TextView).text.toString()
         var address = info.substring(info.length - 17)
         var i: Intent = Intent(this, Sterowanie::class.java).apply {
-            putExtra(EXTRA_ADDRESS, address)
+            putExtra(Intent.EXTRA_TEXT, address)
         }
         startActivity(i)
-        Log.e("wywala", "4")
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -82,7 +81,6 @@ class Lista : Activity() {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         var id = item.itemId
-        Log.e("wywala", "1")
 
         return if (id == R.id.action_settings) {
             true
